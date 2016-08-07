@@ -54,9 +54,9 @@ void trimString(char *string) {
 void writeChangeId(char *changeId) {
 	trimString(changeId);
 	fputs("<a href=\"", stdout);
-	fputs("https://android.googlesource.com/", stdout);
+	fputs("https://github.com/OMAP4-AOSP/", stdout);
 	fputs(currentProject, stdout);
-	fputs("/+/", stdout);
+	fputs("/commit/", stdout);
 	fputs(changeId, stdout);
 	fputs("\">", stdout);
 	fputs(changeId, stdout);
@@ -88,7 +88,7 @@ void displayProjectName() {
 	fputs("&nbsp;<a name=\"", stdout);
 	fputs(sanitisedName, stdout);
 	fputs("\" class=\"nonLink\">Project:</a> <a href=\"", stdout);
-	fputs("https://android.googlesource.com/", stdout);
+	fputs("https://github.com/OMAP4-AOSP/", stdout);
 	fputs(currentProject, stdout);
 	fputs("\">", stdout);
 	fputs(currentProject, stdout);
